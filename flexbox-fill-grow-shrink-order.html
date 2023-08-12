@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    </head>
+    <body>
+    
+        <div class="container">
+
+            <!--"flex-grow-fill"-->
+
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary flex-fill p-2">içerik 1</div>
+                <div class="bg-danger flex-fill p-2">içerik 2</div>
+                <div class="bg-warning flex-fill p-2">içerik 3</div>
+            </div>
+
+            <!--"flex-grow"-->
+            <!--"flex-grow", default değeri flex-grow-0-->
+
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary p-2">içerik 1</div>
+                <div class="bg-danger flex-grow-1 p-2">içerik 2</div>
+                <div class="bg-warning p-2">içerik 3</div>
+            </div>
+
+            <!--"flex-shrink" => metin uzadığında alt satıra kaymaz-->
+            <!--"flex-shrink" => default değeri "flex-shrink-1"-->
+            
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary p-2">içerik 1</div>
+                <div class="bg-danger p-2">içerik 2</div>
+                <div class="bg-warning flex-shrink-0 p-2">içerik 3 içerik 3 içerik 3 içerik 3 
+                    içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 
+                    içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 
+                    içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3 içerik 3</div>
+            </div>
+
+            <!--"me-auto" => margin end-->
+
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary p-2">içerik 1</div>
+                <div class="bg-danger ms-auto p-2">içerik 2</div>
+                <div class="bg-warning p-2">içerik 3</div>
+            </div>
+
+
+            <!--"ms-auto" => margin start-->
+
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary p-2">içerik 1</div>
+                <div class="bg-danger me-auto p-2">içerik 2</div>
+                <div class="bg-warning p-2">içerik 3</div>
+            </div>
+
+
+            <!--"order" => içerik sırasını kendimiz belirliyoruz-->
+
+            <div class="d-flex bg-secondary my-2 p-3 mt-4 text-white">
+                <div class="bg-primary order-3 p-2">içerik 1</div>
+                <div class="bg-danger order-1 p-2">içerik 2</div>
+                <div class="bg-warning order-2 p-2">içerik 3</div>
+            </div>
+
+        </div>
+
+          <!--"flex-wrap", "flex-nowrep", "flex-wrep-reverse"-->
+
+        <div class="container mt-4">
+            <div class="d-flex flex-wrap bg-secondary text-white p-3 mb-4">
+                <div class="p-2 border border-2 bg-dark">Flex içerik 1</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 2</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 3</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 4</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 6</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 7</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 8</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 9</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 10</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 11</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 12</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 13</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 14</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 15</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 16</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 17</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 18</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 19</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 20</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 21</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 22</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 23</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 24</div>
+            </div>
+
+
+            <div class="d-flex flex-wrap-reverse bg-secondary text-white p-3 mb-4">
+                <div class="p-2 border border-2 bg-dark">Flex içerik 1</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 2</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 3</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 4</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 6</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 7</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 8</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 9</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 10</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 11</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 12</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 13</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 14</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 15</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 16</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 17</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 18</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 19</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 20</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 21</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 22</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 23</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 24</div>
+            </div>
+
+            <div class="d-flex flex-nowrap bg-secondary text-white p-3 mb-4">
+                <div class="p-2 border border-2 bg-dark">Flex içerik 1</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 2</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 3</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 4</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 6</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 7</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 8</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 9</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 10</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 11</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 12</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 13</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 14</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 15</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 16</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 17</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 18</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 19</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 20</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 21</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 22</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 23</div>
+                <div class="p-2 border border-2 bg-dark">Flex içerik 24</div>
+            </div>
+        </div>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
