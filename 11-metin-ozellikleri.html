@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+
+        <!--
+        00:00 Giriş
+        00:10 lead classı
+        00:50 Metinleri Yatay Hizalama
+        03:09 text-nowrap
+        06:41 text-break
+        08:40 text-decoration classları
+        11:02 Metni büyük/küçük harfe dönüştürme
+        12:09 initialism classı
+        12:58 font size classları
+        14:02 font weight classları
+        15:37 line height classları
+        16:56 font monospace
+        17:32 linklerde text reset classı
+        19:50 list-unstyled classı
+        21:11 list-inline classı
+        -->
+
+        <head>
+
+            <meta charset="UTF-8">
+
+            <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+            bu sıkıntıları engellemkek için bu kod satırı-->
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            
+            <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="CSS/bootstrap.min.css">
+            <link rel="stylesheet" href="CSS/extra.css ">
+        </head>
+
+        <body>
+
+            <div class="container my-2 p-3"> 
+                <p class="lead"> Şık bir paragraf için "lead" tagını kullanabilirsin</p>    
+                <p> lead olmadan paragraf stili</p>  
+            </div>
+                
+            <div class="container my-2 p-3"> 
+                <p class="text-start"> metni sola hizalama</p>    
+                <p class="text-center"> metni ortaya hizalama</p>  
+                <p class="text-end">metni sağa hizalama</p>
+                <p class="text-nowrap">Duyarlılığım nowrep özelliği kullanıldığı için yok</p>
+                <p class="text-break">gfhdjsklnjfkmdlsönjfkdlmsşöfjnklmdsşaöfnklmdsşönjvdflşsagnjfdklmcsşögnjfdklmcsşölnujfcdmdfhgnfjkdnfkrkdfnşsdlmfkşsdxfkşsdgkşsgkfgkgkagkrrerrfferfejgrgjıuruwfımxnchsjcmfbrlkızsfjsnbrlkı blekızzbelkızbelkıbelkızbelkızbelkızbrlkızbrlkızbrlkızbrlkozbrlkızbrlkızbrlkızbrlkızbrklkızbrlkızbrlkızbrlkızblkızbrlkızbrlkızbelkızbelkızbelkızbelkızbelkızbelkızbelkız?</p>
+            </div>
+
+
+            <div class="container my-2 p-3"> 
+                <p  > Normal Paragraf</p>   
+                <p class="text-decoration-underline"> text-decoration özellikleri</p>   
+                <p class="text-decoration-line-through"> text-decoration özellikleri</p>  
+                <a href="#" class="text-decoration-none">Home</a>
+                <a href="#">About us</a>
+                <a  href="#">Profile</a>
+                <a href="#" class="text-decoration-none">Contact</a>
+
+                <br><br> 
+
+                <p class="text-uppercase">text-uppercase</p>
+                <p class="text-lowercase">text-lowercase</p>
+                <p class="text-capitalize">text-capitalize</p>
+              </div>
+
+              <br><br>
+
+              <p class="fs-3 fw-bold">Font size fw-bold</p>
+              <p class="fs-3 fw-bolder">Font size fw-bolder</p>
+              <p class="fs-3 fw-normal">Font size fw-normal</p>
+              <p class="fs-3 fw-light">Font size fw-light</p>
+              <p class="fs-3 fw-lighter">Font size fw-lighter</p>
+              <p class="fs-3 fst-italic">Font size fst-italic</p>
+              <p class="fs-3 fst-normal">Font size fst-normal</p>
+
+              <div class="container my-3 p-2">
+
+              <!--Satırlar arası mesafe-->
+
+              <p>Normal =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                Morbi fringilla quam id elementum faucibus.</p>
+                <p class="font-monospace">font-monospace =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                    Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                    Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                    mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                    Morbi fringilla quam id elementum faucibus.</p>
+            <p class="lh-1">lh-1 =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                Morbi fringilla quam id elementum faucibus.</p>
+             <p class="lh-sm">lh-sm =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                Morbi fringilla quam id elementum faucibus.</p>
+            <p class="lh-base">lh-base =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                Morbi fringilla quam id elementum faucibus.</p>
+            <p class="lh-lg">lh-lg =>  Mauris non sapien varius, volutpat dolor non, cursus quam. Suspendisse volutpat eros est.
+                Duis egestas augue ac tortor fringilla tempus. Nulla facilisi. Maecenas quis nisi urna. 
+                Donec bibendum ipsum nisl, viverra rhoncus libero aliquam non. Curabitur porta elementum 
+                mauris, eget mattis odio porttitor in. Proin id nibh lacus. Donec ut tincidunt lacus. 
+                Morbi fringilla quam id elementum faucibus.</p>
+
+                <!--linkin ebeveyn yazısıyla aynı renkte olması-->
+             <p class="text-muted">
+                Bu renk <a href="#" class="text-reset">Reset Linke</a> uygulanacak.
+             </p>
+             <p class="text-success ">
+                Bu renk <a href="#" class="text-reset">Reset Linke</a> uygulanacak.
+             </p>
+
+             <ul>
+                <li>Node  JS</li>
+                <li>PHP</li>
+                <li>Front-end
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </li>
+                <li>Asp.Net</li>
+             </ul>
+
+             <ul class="list-unstyled">
+                <li>Node  JS</li>
+                <li>PHP</li>
+                <li>Front-end
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                    </ul>
+                </li>
+                <li>Asp.Net</li>
+             </ul>
+
+
+             <!--yanyana liste-->
+             <ul class="list-inline">
+                <li class="list-inline-item">Home</li>
+                <li class="list-inline-item">About Us</li>
+                <li class="list-inline-item">Profile</li>
+                <li class="list-inline-item">Contact</li>
+             </ul>
+
+              </div>
+
+
+            <script src="js/bootstrap.bundle.min.js"></script>
+        </body>
+
+</html>
