@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+
+        <!--d-print-none çıktı alınmasına için vemez -->
+        <div class="container my-4 d-print-none">
+            <div class="d-block bg-dark text-danger p-3 mb-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-block d-sm-none bg-dark text-white p-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-none d-sm-block bg-dark text-warning p-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-none d-md--block bg-dark text-success p-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-none d-lg-block bg-dark text-light p-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-none d-xl-block bg-dark text-secondary p-3">Bu eleman ne zaman gözüküyor </div>
+            <div class="d-none d-xll-block bg-dark text-primary p-3">Bu eleman ne zaman gözüküyor </div>
+        </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
