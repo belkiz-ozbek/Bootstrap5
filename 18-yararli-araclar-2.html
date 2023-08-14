@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+
+        <!--
+            00:00 Giriş
+            00:36 Genişlik Classları
+            03:22 Yükseklik Classları
+            06:51 Viewport Widh ve Height   (genişliği yada yükskeliiği %100 kaplama olayı)
+            10:22 İnline Elementlerde Dikey Hizalama
+            12:20 Link Renklendirme
+            13:14 Metin Kesme (text-truncate)
+            15:00 Vertical Rule (class="vr") ufak dikey çizgi için | 
+            15:34 Videoları Duyarlı Hale Getirme
+        -->
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+
+        <div class="container-fluid my-2 p-3">
+            <div class="row">
+                <div class="col-12 bg-dark text-white text-center py-3">
+                    <div class="w-25 bg-warning p-2 mb-3">W-25</div>
+                    <div class="w-50 bg-warning p-2 mb-3">W-50</div>
+                    <div class="w-75 bg-warning p-2 mb-3">W-75</div>
+                    <div class="w-100 bg-warning p-2 mb-3">W-100</div>
+                    <div class="w-auto bg-warning p-2 mb-3">W-auto</div>
+                    <div class="mw-25 bg-warning p-2 mb-3">MW(maxweight) - 100</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-2 p-3">
+            <div class="row">
+                <div class="col-12 bg-dark text-white text-center py-3">
+                    <div class="h-25 bg-warning p-2 mb-3">H-25</div>
+                    <div class="h-50 bg-warning p-2 mb-3">H-50</div>
+                    <div class="h-75 bg-warning p-2 mb-3">H-75</div>
+                    <div class="h-100 bg-warning p-2 mb-3">H-100</div>
+                    <div class="h-auto bg-warning p-2 mb-3">H-auto</div>
+                    <div class="mh-25 bg-warning p-2 mb-3">MH(maxheight) - 100</div>
+                </div>
+            </div>
+        </div>
+      
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
