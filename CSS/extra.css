@@ -11,7 +11,13 @@
 }
 
 .Box2{
-    position: fixed;
-    right:3% ;
-    bottom: 3%;
+    position: relative;
+    left: 20%;
+    top: 30%;
+}
+
+.Box3{
+    position: absolute;
+    left: 20%;
+    top: 30%;
 }
