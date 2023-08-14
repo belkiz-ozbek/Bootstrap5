@@ -9,3 +9,9 @@
     height: 8rem;
     background-color: bisque;
 }
+
+.Box2{
+    position: fixed;
+    right:3% ;
+    bottom: 3%;
+}
