@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+
+                
+        <!--
+            00:00 Giriş
+            00:11 Float Classı
+            01:30 Clearfix Classı
+            02:41 User-Select-*
+            04:05 Pointer Event Classları
+            05:38 Opacitiy Classları
+            06:57 Gölgelendirme
+            09:00 Overflow Classları
+            12:13 Visible ve Invisible Classları
+            15:03 Visually Hidden Classı
+        -->
+
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+
+        <div class="container-fluid my-2 p-3">
+           <div class="clearfix mb-5">
+            <span class="float-start bg-dark p-2 text-white">Sol Float</span>
+            <span class="float-end bg-danger p-2 text-white">Sağ Float</span>
+           </div>
+            <span class="float-none bg-danger p-2 text-white">Floatsız</span>
+        </div>
+
+        <div class="container-fluid my-2 p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="user-select-all">Kullanici tikladiginda direkt secilecek</p>
+                    <p class="user-select-auto">Default olan sekli</p>
+                    <p class="user-select-none">Bu yazi tikladiginda direkt secilmez</p>
+                    <p><a href="#" class="pre-none" tabindex="-1" aria-disabled="true"> Bu Linke </a>tiklanamaz</p>
+                    <p><a href="#" class="pe-auto">Bu Linke</a> tiklayabilirsin</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-2 p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="opacity-100 Box">Kullanici 100</div>
+                    <div class="opacity-75 Box">Kullanici 75</div>
+                    <div class="opacity-50 Box">Kullanici 50</div>
+                    <div class="opacity-25 Box">Kullanici 25</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-2 p-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="shadow-none p-3 mb-3 bg-light rounded">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                    <div class="shadow p-3 mb-3 bg-light rounded">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                    <div class="shadow-sm p-3 mb-3 bg-light rounded">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                    <div class="shadow-lg p-3 mb-3 bg-light rounded">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                </div>
+                </div>
+            </div>
+
+
+             <div class="container my-2 p-3">
+                <div class="row">
+                        <div class="col-md-3 bg-light overflow-auto" style="height:6rem;">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                           nici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg Kulla</div>
+                        <div class="col-md-3 bg-success overflow-visible" style="height:6rem;">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            nici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                        <div class="col-md-3 bg-info overflow-hidden" style="height:6rem;">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            nici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg</div>
+                        <div class="col-md-3 bg-warning overflow-scroll"  style="height:6rem;">Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                            nici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg 
+                            Kullanici 100 sdkgfjkjd jdkgjnfg jfkgnjnfjsv fkjngjvknfknv fjngjkfnvnf fdvkfnvf djkfg
+                </div>
+                <br><br><br><br><br><br><br><br>
+
+                <!--d-none ve invisible birbirinden frakkıdır, iinvisible yer  kaplar ama gözükmez, d-none yer kaplamaz da gözükmez de-->
+                <div class="container my-2 p-3">
+                    <div class="row">
+                            <div class="col-md-3 bg-danger  visible">visible / görünmeli</div>
+                            <div class="col-md-3 bg-success overflow-hidden invisible" >görünmemeli</div>
+                            <div class="col-md-3 bg-info visible" >visible / görünmeli</div>
+                    </div>
+                </div>
+
+
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
