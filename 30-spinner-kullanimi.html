@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+
+        <!--
+        00:00 Giriş
+        00:12 spinner-border
+        01:30 Spinner Renkleri
+        03:33 spinner-grow
+        05:21 Spinner Boyutlandırma
+        07:45 Spinner Hizalama
+        13:35 Butonlarla Kullanım
+        -->
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+
+        <div class="container p-4 my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="spinner-border spinner-border-sm" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-border text-black" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-border text-secondary" style="width: 8rem; height: 8rem;" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-4 my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="spinner-grow  spinner-grow-sm" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-grow text-black" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" style="width: 8rem; height: 8rem;" role="status">
+                        <span class="visually-hidden">yükleniyor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container p-4 my-5">
+            <div class="row">
+                <div class="col">
+                    
+                    <button type="button" class="btn btn-success" disabled>
+                        <span class="spinner-border text-light spinner-border-sm"
+                        role="status" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-success" disabled>
+                        Yükleniyor...
+                        <span class="spinner-border text-light spinner-border-sm"
+                        role="status" aria-hidden="true"></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
