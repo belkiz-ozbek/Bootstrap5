@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+    <head>
+
+        <!--
+            00:00 Giriş
+            00:14 Badge (Rozet)
+            05:18 Breadcrumb // sayfa işaret yolu
+        -->
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+        
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <h4>Badge başlıkla kullanımı <div class="badge bg-danger">yeni</div></h4>
+                    <button type="button" class="position-absolute top-0 start-100  btn btn-success position-relative">
+                        Bildirimler <span class="badge bg-light text-dark">7</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <button type="button" class="btn btn-success position-relative">Bildirimler 
+                        <span class="badge bg-warning text-dark position-absolute top-0 start-100 translate-middle bedge rounded-pill bg-danger">+7 </span></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <span class="badge rounded-pill bg-dark">dark</span>
+                    <span class="badge rounded-pill bg-primary">primary</span>
+                    <span class="badge rounded-pill bg-secondary">secondary</span>
+                    <span class="badge rounded-pill bg-success">success</span>
+                    <span class="badge rounded-pill bg-light text-black">light</span>
+                    <span class="badge rounded-pill bg-warning">warning</span>
+                    <span class="badge rounded-pill bg-info">info</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="sayfa işaret yolu">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="#">İletişim</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Veri</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <nav aria-label="sayfa işaret yolu" style="--bs-breadcrumb-divider: '> ';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                            <li class="breadcrumb-item"><a href="#">İletişim</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Veri</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+      <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html> 
