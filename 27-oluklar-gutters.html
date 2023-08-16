@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html lang="en">
+
+  <!--satırdaki sütunları birbirine yakınlaştırır gx -->
+  <!--satırdaki sütunları birbirine yakınlaştırır gy -->
+<!--g-3 mesela hem dikey hem d eyatay aralığı düzenler -->
+
+    <!--
+    00:00 Giriş
+    00:31 gx* classları
+    03:28 gy* classları
+    05:16 g* classları
+    07:02 row-cols classları ile gutter kullanımı
+    -->
+    <head>
+
+      <meta charset="UTF-8">
+
+      <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
+      bu sıkıntıları engellemkek için bu kod satırı-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+      <!--Sayfanın boyutuna göre içerik ayarlanır.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="CSS/bootstrap.min.css">
+      <link rel="stylesheet" href="CSS/extra.css ">
+    </head>
+
+    <body>
+
+   
+        <div class="container my-5 p-4">
+            <div class="row gy-3">
+                <div class="col-6 "> 
+                    <div class="p-3 border border-primary bg-light">Paddingli sütun</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border border-success bg-light">Paddingli sütun 2</div>
+                </div>  
+                <div class="col-6 "> 
+                    <div class="p-3 border border-primary bg-light">Paddingli sütun</div>
+                </div>
+                <div class="col-6">
+                    <div class="p-3 border border-success bg-light">Paddingli sütun 2</div>
+                </div>  
+            </div>
+        </div>
+
+        <!--break point noktalar ver-->
+
+        <div class="container my-5 p-4">
+            <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-5">
+                <div class="col"> 
+                    <div class="p-3 border border-primary bg-light">Paddingli sütun</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border border-success bg-light">Paddingli sütun 2</div>
+                </div>  
+                <div class="col"> 
+                    <div class="p-3 border border-primary bg-light">Paddingli sütun</div>
+                </div>
+                <div class="col">
+                    <div class="p-3 border border-success bg-light">Paddingli sütun 2</div>
+                </div>  
+            </div>
+        </div>
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+
+</html>
