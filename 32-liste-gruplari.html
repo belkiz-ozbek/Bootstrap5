@@ -3,6 +3,19 @@
 
     <head>
 
+      <!--
+
+          00:00 Giriş
+          00:10 Liste Grupları
+          03:13 Link Listesi Oluşturma
+          05:23 Buton Listesi Oluşturma
+          07:00 Flush
+          08:00 Listeleri Yatay Hizalama
+          09:05 Numaralandırma
+          10:08 Renklendirme
+
+      -->
+
       <meta charset="UTF-8">
 
       <!--internet explorer tarayıcısında genelde sıkıntılar oluşur,
@@ -18,11 +31,92 @@
 
     <body>
 
-        <div class="container p-4 my-5">
-            <div class="row">
-                <div class="col-12">
+      <div class="container my-5">
+        <div class="row ">
+            <div class="col">
+              <ul class="list-group">
+                 <li class="list-group-item disabled">HTML</li>
+                 <li class="list-group-item">CSS</li>
+                 <li class="list-group-item">Bootstrap</li>
+                 <li class="list-group-item">Javascript</li>
+                 <li class="list-group-item active">Node JS</li>
+                 <li class="list-group-item">PHP</li>
+              </ul>
+            </div> 
+        </div>
+    </div>
 
-                </div>
+        <div class="container my-5">
+            <div class="row row-cols-3  gy-4">
+                <div class="col">
+                  <ul class="list-group">
+                     <li class="list-group-item disabled">HTML</li>
+                     <li class="list-group-item">CSS</li>
+                     <li class="list-group-item">Bootstrap</li>
+                     <li class="list-group-item">Javascript</li>
+                     <li class="list-group-item active">Node JS</li>
+                     <li class="list-group-item">PHP</li>
+                  </ul>
+                </div> 
+
+                <div class="col">
+                  <ul class="list-group">
+                     <a href="#" class="list-group-item list-group-item ">Pyhton</a>
+                     <a href="#" class="list-group-item list-group-item ">C</a>
+                     <a href="#" class="list-group-item list-group-item ">C++</a>
+                     <a href="#" class="list-group-item list-group-item ">C#</a>
+                     <a href="#" class="list-group-item list-group-item  active">Angular</a>
+                     <a href="#" class="list-group-item list-group-item ">React JS</a>
+                  </ul>
+                </div> 
+
+                <div class="col">
+                  <div class="list-group">
+                     <button type="button" class="list-group-item list-group-item ">Pyhton</button>
+                     <button type="button" class="list-group-item list-group-item ">C</button>
+                     <button type="button" class="list-group-item list-group-item ">C++</button>
+                     <button type="button" class="list-group-item list-group-item ">C#</button>
+                     <button type="button" class="list-group-item list-group-item  active">Angular</button>
+                     <button type="button" class="list-group-item list-group-item disabled ">React JS</button>
+                  </div>
+                </div> 
+
+                <!--kenarliklar yok sadece yatay çizgilre var.-->
+
+                <div class="col">
+                  <ul class="list-group list-group-flush ">
+                     <li class="list-group-item list-group-item-primary disabled">HTML</li>
+                     <li class="list-group-item list-group-item-secondary">CSS</li>
+                     <li class="list-group-item list-group-item-warning">Bootstrap</li>
+                     <li class="list-group-item list-group-item-success">Javascript</li>
+                     <li class="list-group-item list-group-item-liight">Node JS</li>
+                     <li class="list-group-item list-group-item-info">PHP</li>
+                     <li class="list-group-item list-group-item-danger">SQL</li>
+                     <li class="list-group-item list-group-item-dark">Java</li>
+                  </ul>
+                </div> 
+
+                <div class="col">
+                  <ol class="list-group list-group-numbered">
+                    <li class="list-group-item">HTML</li>
+                    <li class="list-group-item">CSS</li>
+                    <li class="list-group-item">Javascript</li>
+                    <li class="list-group-item">Bootstrap</li>
+                    <li class="list-group-item">PHP</li>
+                  </ol>
+                </div> 
+
+                <div class="col">
+                  <ul class="list-group list-group-horizontal">
+                     <li class="list-group-item disabled">HTML</li>
+                     <li class="list-group-item">CSS</li>
+                     <li class="list-group-item">Bootstrap</li>
+                     <li class="list-group-item">Javascript</li>
+                     <li class="list-group-item">Node JS</li>
+                     <li class="list-group-item">PHP</li>
+                  </ul>
+                </div> 
+
             </div>
         </div>
 
